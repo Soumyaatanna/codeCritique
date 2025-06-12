@@ -33,3 +33,46 @@ cd ../frontend
 npm install
 npm run dev
 ```
+How It Works
+You paste your code into the web interface.
+
+Our AI engine analyzes the code.
+
+Feedback is generated instantly, including:
+
+Suggestions
+
+Refactoring tips
+
+Code quality metrics
+
+✨ Future Plans
+GitHub PR integration
+
+VSCode extension
+
+Customizable feedback levels
+
+Language-specific tuning (Python, JS, Java, etc.)
+
+Login & history tracking
+
+📢 Contributing
+Pull requests are welcome! If you'd like to contribute:
+
+Fork the repository
+
+Create your feature branch (git checkout -b feature/AmazingFeature)
+
+Commit your changes
+
+Push to the branch
+
+Open a pull request
+
+📄 License
+MIT
+
+🙌 Acknowledgements
+Built with ❤️ by Soumya Tanna
+
