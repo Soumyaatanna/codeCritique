@@ -7,6 +7,8 @@ import rehypeHighlight from "rehype-highlight";
 import "highlight.js/styles/github-dark.css";
 import axios from 'axios'
 import './App.css'
+const backendURL = import.meta.env.backendURL
+
 
 function App() {
   
@@ -21,7 +23,7 @@ function App() {
   }, [])
 
   async function reviewCode() {
-    const response = await axios.post('https://codecritique-py2l.onrender.com/ai/get-review', { code })
+    const response = await axios.post(`${backendURL}/api/test`, { code })
     setReview(response.data)
   }
 
