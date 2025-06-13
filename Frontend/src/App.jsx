@@ -21,13 +21,14 @@ function App() {
   }, [])
 
   async function reviewCode() {
-    const response = await axios.post('http://localhost:3000/ai/get-review', { code })
+    const response = await axios.post('https://codecritique-py2l.onrender.com/ai/get-review', { code })
     setReview(response.data)
   }
 
   return (
-    <>
-      <main>
+        <div className="container">
+      <main className="main-content">
+        <h1 className="title">CodeCritique</h1>
         <div className="left">
           <div className="code">
             <Editor
@@ -50,14 +51,12 @@ function App() {
             className="review">Review</div>
         </div>
         <div className="right">
-          <Markdown
-
-            rehypePlugins={[ rehypeHighlight ]}
-
-          >{review}</Markdown>
+          <Markdown rehypePlugins={[ rehypeHighlight ]}>
+            {review}
+          </Markdown>
         </div>
       </main>
-    </>
+    </div>
   )
 }
 
