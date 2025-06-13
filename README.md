@@ -12,7 +12,7 @@ CodeCritique is an AI-powered code review tool that helps developers of all leve
 - 💬 Inline feedback and detailed analysis
 
 ## 📸 Demo
-
+https://code-critique.vercel.app/
 
 ## 🛠️ Tech Stack
 
@@ -26,7 +26,7 @@ git clone https://github.com/Soumyaatanna/codeCritique.git
 cd codeCritique
 # Install backend dependencies
 cd backend
-pip install -r requirements.txt
+node server.js
 
 # Install frontend dependencies
 cd ../frontend
